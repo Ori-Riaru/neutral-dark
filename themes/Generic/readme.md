@@ -1,0 +1,1 @@
+Generic set of styles used intended as a base for creating new themes.
