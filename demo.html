@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="demo.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <main class="window">
+      <nav class="card">
+        <div class="home">Home</div>
+        <div class="about">About</div>
+      </nav>
+      <div class="feed">
+        <div class="card">
+          <h1>Feed</h1>
+        </div>
+
+        <div class="card">
+          <h2>Color Palette</h2>
+
+          <div class="color-palette">
+            <div class="swatch"></div>
+            <div class="swatch">+++</div>
+            <div class="swatch">++</div>
+            <div class="swatch">+</div>
+            <div class="swatch">.</div>
+            <div class="swatch">-</div>
+
+            <div class="swatch">black</div>
+            <div class="swatch" style="background: var(--black-4)"></div>
+            <div class="swatch" style="background: var(--black-3)"></div>
+            <div class="swatch" style="background: var(--black-2)"></div>
+            <div class="swatch" style="background: var(--black-1)"></div>
+            <div class="swatch" style="background: var(--black-0)"></div>
+
+            <div class="swatch">white</div>
+            <div class="swatch" style="background: var(--white-4)"></div>
+            <div class="swatch" style="background: var(--white-3)"></div>
+            <div class="swatch" style="background: var(--white-2)"></div>
+            <div class="swatch" style="background: var(--white-1)"></div>
+            <div class="swatch" style="background: var(--white-0)"></div>
+
+            <div class="swatch">red</div>
+            <div class="swatch" style="background: var(--red-4)"></div>
+            <div class="swatch" style="background: var(--red-3)"></div>
+            <div class="swatch" style="background: var(--red-2)"></div>
+            <div class="swatch" style="background: var(--red-1)"></div>
+            <div class="swatch" style="background: var(--red-0)"></div>
+
+            <div class="swatch">orange</div>
+            <div class="swatch" style="background: var(--orange-4)"></div>
+            <div class="swatch" style="background: var(--orange-3)"></div>
+            <div class="swatch" style="background: var(--orange-2)"></div>
+            <div class="swatch" style="background: var(--orange-1)"></div>
+            <div class="swatch" style="background: var(--orange-0)"></div>
+
+            <div class="swatch">yellow</div>
+            <div class="swatch" style="background: var(--yellow-4)"></div>
+            <div class="swatch" style="background: var(--yellow-3)"></div>
+            <div class="swatch" style="background: var(--yellow-2)"></div>
+            <div class="swatch" style="background: var(--yellow-1)"></div>
+            <div class="swatch" style="background: var(--yellow-0)"></div>
+
+            <div class="swatch">orange</div>
+            <div class="swatch" style="background: var(--green-4)"></div>
+            <div class="swatch" style="background: var(--green-3)"></div>
+            <div class="swatch" style="background: var(--green-2)"></div>
+            <div class="swatch" style="background: var(--green-1)"></div>
+            <div class="swatch" style="background: var(--green-0)"></div>
+
+            <div class="swatch">teal</div>
+            <div class="swatch" style="background: var(--teal-4)"></div>
+            <div class="swatch" style="background: var(--teal-3)"></div>
+            <div class="swatch" style="background: var(--teal-2)"></div>
+            <div class="swatch" style="background: var(--teal-1)"></div>
+            <div class="swatch" style="background: var(--teal-0)"></div>
+
+            <div class="swatch">cyan</div>
+            <div class="swatch" style="background: var(--cyan-4)"></div>
+            <div class="swatch" style="background: var(--cyan-3)"></div>
+            <div class="swatch" style="background: var(--cyan-2)"></div>
+            <div class="swatch" style="background: var(--cyan-1)"></div>
+            <div class="swatch" style="background: var(--cyan-0)"></div>
+
+            <div class="swatch">blue</div>
+            <div class="swatch" style="background: var(--blue-4)"></div>
+            <div class="swatch" style="background: var(--blue-3)"></div>
+            <div class="swatch" style="background: var(--blue-2)"></div>
+            <div class="swatch" style="background: var(--blue-1)"></div>
+            <div class="swatch" style="background: var(--blue-0)"></div>
+
+            <div class="swatch">purple</div>
+            <div class="swatch" style="background: var(--purple-4)"></div>
+            <div class="swatch" style="background: var(--purple-3)"></div>
+            <div class="swatch" style="background: var(--purple-2)"></div>
+            <div class="swatch" style="background: var(--purple-1)"></div>
+            <div class="swatch" style="background: var(--purple-0)"></div>
+
+            <div class="swatch">pink</div>
+            <div class="swatch" style="background: var(--pink-4)"></div>
+            <div class="swatch" style="background: var(--pink-3)"></div>
+            <div class="swatch" style="background: var(--pink-2)"></div>
+            <div class="swatch" style="background: var(--pink-1)"></div>
+            <div class="swatch" style="background: var(--pink-0)"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Syntax Highlighting</h2>
+          <pre>
+            <code class="language-javascript">
+// Type some code ->
+
+const similar = "oO08 iIlL1 g9qCGQ"
+const diacritics_etc = "â é ù ï ø ç Ã Ē Æ œ"
+
+window.toggleFavorite = (alias) => {
+    try {
+        let favorites = JSON.parse (
+          localStorage.getItem('favorites')) || []
+          if (favorites.indexOf(alias) > -1) {
+            favorites = favorites.filter((v) => {
+            return v !== alias
+          })
+    } else {
+      favorites.push(alias)
+    }
+      localStorage.setItem('favorites', JSON.stringify(Array.from(new Set(favorites))))
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error('could not save favorite', err)
+    }
+    renderSelectList()
+    return false
+}
+            </code>
+          </pre>
+        </div>
+
+        <div class="card">
+          <h2>Input</h2>
+          <div
+            style="display: flex; flex-direction: column; gap: var(--spacing-2)"
+          >
+            <label for="input">Email</label>
+            <input
+              type="email"
+              placeholder="your-email@domain.com"
+              id="email"
+            />
+            <label for="input">Password</label>
+            <input type="password" id="password" placeholder="••••••••" />
+            <input type="file" name="" id="" />
+            <select name="" id="">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label for="terms"> 
+              I agree to the <a href="#">Terms of Service</a>
+              <input type="checkbox" id="terms" name="" id="" />
+            </label>
+            <label for="favorite-color">Favorite Color</label>
+            <input type="color" id="favorite-color" value="#a080ff" />
+            <button type="button" class="primary">submit</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Article</h2>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              minus facilis voluptatum tempore impedit quos. Dolorum facilis,
+              commodi voluptatibus non culpa perspiciatis impedit dicta quis
+              voluptatem aut, quasi maxime incidunt?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloribus aut voluptas at eaque dolores quis animi vero? Natus
+              aliquam perferendis eius dolore, nihil officiis ex distinctio,
+              unde rem quam voluptates beatae labore saepe. Temporibus quas ad
+              id aliquam, iste, suscipit numquam distinctio error dignissimos
+              sequi officia quidem impedit ipsum blanditiis, sunt quisquam?
+              Cumque ipsum nostrum eveniet explicabo alias deleniti voluptas
+              reiciendis nobis est accusamus. Maiores mollitia corrupti odio
+              soluta accusamus distinctio pariatur, minima totam facilis!
+              Laudantium, quaerat! Magni labore rem est, quod sit fugiat quae
+              sapiente nihil accusamus autem dolorum, similique repudiandae,
+              ullam dignissimos tempora neque nam doloremque natus odio unde
+              illum minima facere consequuntur impedit! Aliquam voluptate, saepe
+              cupiditate at libero cumque a beatae impedit recusandae provident
+              animi praesentium unde architecto error labore voluptatibus
+              adipisci laborum laudantium facilis similique inventore hic
+              repudiandae ab sint. Dolore excepturi totam magnam quos neque
+              perspiciatis nihil eius, veniam dicta eveniet architecto
+              consequatur placeat!
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              et maiores libero hic quisquam consequuntur asperiores sunt nisi
+              perspiciatis voluptas?
+            </p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
