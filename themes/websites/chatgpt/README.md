@@ -8,6 +8,6 @@ TODO: Add preview
 
 1. Install [Stylus extension](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en&pli=1)
 
-2. Create a new style for [freek.to](https://freek.to/)
+2. Create a new style for [freek.to](https://chatgpt.com/)
 
-3. Copy and paste the code from `freek.css` into the new style
+3. Copy and paste the code from `chatgpt.css` into the new style
