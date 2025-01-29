@@ -1,173 +1,87 @@
 :root {
-  --font: Inter
+  --font: Inter;
   --font-mono-space: JetBrainsMono Nerd Font;
 
-  --accent-primary-1: var(--purple-1);
-  --accent-primary-2: var(--purple-2);
-  --accent-primary-3: var(--purple-3);
-
+  /* accent, link, selection background */
+  --accent: var(--purple-1);
   --accent-secondary: var(--blue-1);
   --accent-tertiary: var(--yellow-1);
 
-  --backdrop: var(--black-0);
+  /* Backgrounds */
+  --base: #080808; /* @nix settings.base */
+  --section: #181818; /* @nix settings.section */
+  --card: #353535; /* @nix settings.card */
 
-  --base: var(--black-1);
-  --card: var(--black-2);
-  --card-2: var(--black-3); /* use sparingly */
+  --input: var(--black-2);
+  --overlay: var(--black-2);
 
-  --overlay: var(--black-3);
-  --input: var(--black-3);
-
-  --size-0: 1em;
-  --size-1: 2em;
-  --size-2: 3em;
-  --size-3: 4em;
-  --size-4: 5em;
-
-  --spacing-1: 6px;
+  /* Layout */
+  --spacing-0: 3px;
+  --spacing-1: 8px;
   --spacing-2: 12px;
-  --spacing-3: 18px;
 
-  --border-1: 1px;
-  --border-2: 2px;
+  --border-1: 0px;
+  --border-2: 0px;
 
-  --radius-1: 6px;
-  --radius-2: 12px;
-
-  --selection-background: var(--accent-primary);
-
-  --link: var(var(--purple-1));
-  --link-visited: var(--blue-2);
+  --radius-1: 8px; /* @nix settings.radius-1 */
+  --radius-2: 12px; /* @nix settings.radius-2 */
+  --radius-3: 18px; /* @nix settings.radius-3 */
 
   /* Main text, Headlines */
-  --text: var(--white-0);
-
-  /* Subtext, Sub Headline */
-  --subtext: var(--white-10);
-
-  /* error, remove, close, delete */
-  --error: var(--red-1);
-
-  /* neutral */
-  --neutral: var(--blue-1);
-
-  /* warning */
-  --warning: var(--orange-1);
-
-  /* success, new, add */
-  --success: var(--green-1);
-
-  /* modified, changed, edit */
-  --modified: var(--purple-1);
-
-  /* info, help */
-  --info: var(--teal-1);
-
-  /* Syntax Highlighting */
-
-  /* Keywords, reserved words, important terms */
-  --keyword: var(--purple-1);
-
-  /* Function names, declarations */
-  --function: var(--blue-1);
-
-  /* Variable names, constants */
-  --variable: var(--teal-1);
-
-  /* Strings, text content */
-  --string: var(--green-1);
-
-  /* Numbers, numeric literals */
-  --number: var(--orange-1);
-
-  /* Comments */
-  --comment: var(--white-20);
-
-  /* Operators (+, -, *, etc.) */
-  --operator: var(--pink-1);
-
-  /* Classes, constructors, special types */
-  --class: var(--yellow-1);
-
-  /* Tags (HTML/XML), annotations */
-  --tag: var(--red-1);
-
-  /* Attributes, properties (HTML/CSS/JSX) */
-  --attribute: var(--cyan-1);
-
   /* Punctuation (brackets, semicolons, etc.) */
-  --punctuation: var(--white-20);
+  --text: var(--white-3); /* @nix settings.text */
 
-  /* color palette */
+  /* Subtext, Sub Headline, comment */
+  --subtext: var(--white-1); /* @nix settings.subtext */
 
   /* black */
-  --black-4: #2f2f2f;
-  --black-3: #282828;
-  --black-2: #202020;
-  --black-1: #191919;
-  --black-0: #121212;
+  --black-4: #515151;
+  --black-3: #404040;
+  --black-2: #303030;
+  --black-1: #1d1d1d;
+  --black-0: #141414; /* @nix settings.black */
 
   /* white */
-  --white-4: #b4b4b4;
-  --white-3: #c6c6c6;
-  --white-2: #d9d9d9;
-  --white-1: #ececec;
-  --white-0: #ffffff;
+  --white-4: #ffffff; /* @nix settings.white */
+  --white-3: #f0f0f0;
+  --white-2: #dfdfdf;
+  --white-1: #cacaca;
+  --white-0: #ababab;
 
+  /* error, remove, close, delete */
+  /* Tags (HTML/XML), annotations */
+  --red: #ff596b; /* @nix settings.red */
 
-  /* Red */
-  --red-3: #ff8c9c;
-  --red-2: #ff7283;
-  --red-1: #ff576a;
-  --red-0: #ff4660;
+  /* warning */
+  /* Numbers, numeric literals */
+  --orange: #ffa062; /* @nix settings.orange */
 
-  /* Orange */
-  --orange-3: #ffc6a0;
-  --orange-2: #ffb381;
-  --orange-1: #ffa062;
-  --orange-0: #ff964c;
+  /* info, help */
+  /* Classes, constructors, special types */
+  --yellow: #fffb77; /* @nix settings.yellow */
 
-  /* Yellow */
-  --yellow-3: #fffcb0;
-  --yellow-2: #fffc94;
-  --yellow-1: #fffb77;
-  --yellow-0: #fff84b;
+  /* Strings, text content */
+  --green: #99ff82; /* @nix settings.green */
 
-  /* Green */
-  --green-3: #c6ffb5;
-  --green-2: #b1ff9c;
-  --green-1: #99ff82;
-  --green-0: #89ff6d;
+  /* success, new, add */
+  /* Variable names, constants */
+  --teal: #80ffc1; /* @nix settings.teal */
 
-  /* Teal */
-  --teal-3: #b9ffda;
-  --teal-2: #9fffcd;
-  --teal-1: #80ffc1;
-  --teal-0: #56ffb5;
+  /* Attributes, properties (HTML/CSS/JSX) */
+  --cyan: #7ef8fe; /* @nix settings.cyan */
 
-  /* Cyan */
-  --cyan-3: #c0fbfe;
-  --cyan-2: #9efafe;
-  --cyan-1: #7ef8fe;
-  --cyan-0: #52f7ff;
+  /* neutral */
+  /* Function names, declarations */
+  --blue: #83bbff; /* @nix settings.blue */
 
-  /* Blue */
-  --blue-3: #b9d6ff;
-  --blue-2: #9fc8ff;
-  --blue-1: #83bbff;
-  --blue-0: #71b1ff;
+  /* modified, changed, edit */
+  /* Keywords, reserved words, important terms */
+  --purple: #a386ff;
 
-  /* Purple */
-  --purple-3: #cab5ff;
-  --purple-2: #b69dff;
-  --purple-1: #a185ff;
-  --purple-0: #9e7dff;
+  /* Operators (+, -, *, etc.) */
+  --pink: #fe99fe;
 
-  /* Pink */
-  --pink-3: #ffc4ff;
-  --pink-2: #ffafff;
-  --pink-1: #fe99fe;
-  --pink-0: #ff8efe;
+  --brown: #ba8d70;
 }
 
 body {

@@ -2,7 +2,7 @@
 
 ## Preview
 
-TODO: Add preview
+![preview](./preview.png)
 
 ## Installation
 
