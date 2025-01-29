@@ -1,0 +1,158 @@
+{
+  "vscode_custom_css.imports": ["file:///C:/Users/MyUserName/Documents/custom.css"],
+
+  "workbench.colorCustomizations": {
+    "activityBar.foreground": "#ffffff",
+    "activityBarBadge.background": "#a386ff",
+    "button.background": "#a386ff",
+    "button.hoverBackground": "#a386ff",
+    "disableForeground": "#ffffff",
+    "editor.background": "#181818",
+    "editor.foreground": "#ffffff",
+    "editor.lineHighlightBackground": "#222222",
+    "editor.selectionBackground": "#a386ff",
+    "editor.selectionForeground": "#ffffff",
+    "editorBracketHighlight.foreground1": "#a386ff",
+    "editorBracketHighlight.foreground2": "#83bbff",
+    "editorBracketHighlight.foreground3": "#7ef8fe",
+    "editorBracketHighlight.foreground4": "#80ffc1",
+    "editorBracketHighlight.foreground5": "#99ff82",
+    "editorBracketHighlight.foreground6": "#ffa062",
+    "editorBracketHighlight.unmatchedForeground": "#ff596b",
+    "editorCursor.foreground": "#ffffff",
+    "editorGroup.border": "#0000",
+    "editorGutter.addedBackground": "#80ffc1",
+    "editorGutter.deletedBackground": "#ff596b",
+    "editorGutter.modifiedBackground": "#a386ff",
+    "editorLineNumber.foreground": "#AAAAAA",
+    "editorWarning.foreground": "#ffa062",
+    "editorWidget.border": "#0000",
+    "errorForeground": "#ff596b",
+    "errorLens.errorBackground": "#ff596b33",
+    "errorLens.errorForeground": "#ff596b",
+    "errorLens.warningBackground": "#ffa06233",
+    "errorLens.warningForeground": "#ffa062",
+    "focusBorder": "#0000",
+    "foreground": "#ffffff",
+    "gitDecoration.deletedResourceForeground": "#ff596b",
+    "gitDecoration.modifiedResourceForeground": "#a386ff",
+    "gitDecoration.untrackedResourceForeground": "#80ffc1",
+    "input.background": "#222222",
+    "list.errorForeground": "#ff596b",
+    "list.hoverBackground": "#222222",
+    "list.warningForeground": "#ffa062",
+    "scrollbar.shadow": "#0000",
+    "sideBar.background": "#181818",
+    "sideBar.foreground": "#FFFFFF",
+    "sideBarSectionHeader.background": "#181818",
+    "sideBarSectionHeader.border": "#0000",
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiBlue": "#83bbff",
+    "terminal.ansiBrightBlack": "#AAAAAA",
+    "terminal.ansiBrightBlue": "#ACD1FF",
+    "terminal.ansiBrightCyan": "#B9F7FF",
+    "terminal.ansiBrightGreen": "#99ff82",
+    "terminal.ansiBrightMagenta": "#ADA0FF",
+    "terminal.ansiBrightRed": "#FF5271",
+    "terminal.ansiBrightWhite": "#ffffff",
+    "terminal.ansiBrightYellow": "#fffb77",
+    "terminal.ansiCyan": "#7ef8fe",
+    "terminal.ansiGreen": "#80ffc1",
+    "terminal.ansiMagenta": "#a386ff",
+    "terminal.ansiRed": "#ff596b",
+    "terminal.ansiWhite": "#ffffff",
+    "terminal.ansiYellow": "#ffa062",
+    "terminal.background": "#181818",
+    "terminal.foreground": "#ffffff",
+    "terminalCursor.foreground": "#ffffff",
+    "widget.border": "#0000"
+  },
+
+  "editor.tokenColorCustomizations": {
+    //testing
+    "textMateRules": [
+      {
+        "scope": [""],
+        "settings": {
+          "foreground": "#FFFFFF"
+        }
+      },
+
+      {
+        "scope": ["comment", "punctuation.definition.comment"],
+        "settings": {
+          "foreground": "#AAAAAA"
+        }
+      },
+      {
+        "scope": ["variable", "constant.language", "entity.name.variable"],
+        "settings": {
+          "foreground": "#80ffc1" /* teal */
+        }
+      },
+      {
+        "scope": ["string", "entity.other.attribute-name", "markup.inserted"],
+        "settings": {
+          "foreground": "#99ff82" /* green */
+        }
+      },
+      {
+        "scope": ["keyword", "storage.type", "storage.modifier"],
+        "settings": {
+          "foreground": "#a386ff" /* purple */
+        }
+      },
+      {
+        "scope": ["constant.numeric", "constant.character.numeric"],
+        "settings": {
+          "foreground": "#ffa062" /* orange */
+        }
+      },
+      {
+        "scope": ["entity.name.tag", "meta.tag", "markup.deleted"],
+        "settings": {
+          "foreground": "#ff596b" /* red */
+        }
+      },
+      {
+        "scope": [
+          "support.class",
+          "entity.name.type.class",
+          "entity.other.inherited-class"
+        ],
+        "settings": {
+          "foreground": "#fffb77" /* yellow */
+        }
+      },
+      {
+        "scope": ["punctuation.definition.string", "constant.other.symbol"],
+        "settings": {
+          "foreground": "#7ef8fe" /* cyan */
+        }
+      },
+
+      {
+        "scope": ["entity.name.function", "meta.function-call"],
+        "settings": {
+          "foreground": "#83bbff" /* blue */
+        }
+      },
+
+      {
+        "scope": ["keyword.operator", "punctuation.accessor"],
+        "settings": {
+          "foreground": "#fe99fe" /* pink */
+        }
+      },
+
+      {
+        "scope": ["markup.changed"],
+        "settings": {
+          "foreground": "#ba8d70" /* brown */
+        }
+      }
+    ]
+  },
+
+  "workbench.colorTheme": "Visual Studio Dark"
+}

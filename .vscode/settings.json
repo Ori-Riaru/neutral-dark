@@ -1,0 +1,96 @@
+
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#a386ff",
+    "editorBracketHighlight.foreground2": "#83bbff",
+    "editorBracketHighlight.foreground3": "#7ef8fe",
+    "editorBracketHighlight.foreground4": "#80ffc1",
+    "editorBracketHighlight.foreground5": "#99ff82",
+    "editorBracketHighlight.foreground6": "#ffa062"
+  },
+
+  "editor.tokenColorCustomizations": {
+    //testing
+    "textMateRules": [
+      {
+        "scope": [""],
+        "settings": {
+          "foreground": "#FFFFFF"
+        }
+      },
+
+      {
+        "scope": ["comment", "punctuation.definition.comment"],
+        "settings": {
+          "foreground": "#AAAAAA"
+        }
+      },
+      {
+        "scope": ["variable", "constant.language", "entity.name.variable"],
+        "settings": {
+          "foreground": "#80ffc1" /* teal */
+        }
+      },
+      {
+        "scope": ["string", "entity.other.attribute-name", "markup.inserted"],
+        "settings": {
+          "foreground": "#99ff82" /* green */
+        }
+      },
+      {
+        "scope": ["keyword", "storage.type", "storage.modifier"],
+        "settings": {
+          "foreground": "#a386ff" /* purple */
+        }
+      },
+      {
+        "scope": ["constant.numeric", "constant.character.numeric"],
+        "settings": {
+          "foreground": "#ffa062" /* orange */
+        }
+      },
+      {
+        "scope": ["entity.name.tag", "meta.tag", "markup.deleted"],
+        "settings": {
+          "foreground": "#ff596b" /* red */
+        }
+      },
+      {
+        "scope": [
+          "support.class",
+          "entity.name.type.class",
+          "entity.other.inherited-class"
+        ],
+        "settings": {
+          "foreground": "#fffb77" /* yellow */
+        }
+      },
+      {
+        "scope": ["punctuation.definition.string", "constant.other.symbol"],
+        "settings": {
+          "foreground": "#7ef8fe" /* cyan */
+        }
+      },
+
+      {
+        "scope": ["entity.name.function", "meta.function-call"],
+        "settings": {
+          "foreground": "#83bbff" /* blue */
+        }
+      },
+
+      {
+        "scope": ["keyword.operator", "punctuation.accessor"],
+        "settings": {
+          "foreground": "#fe99fe" /* pink */
+        }
+      },
+
+      {
+        "scope": ["markup.changed"],
+        "settings": {
+          "foreground": "#ba8d70" /* brown */
+        }
+      }
+    ]
+  }
+

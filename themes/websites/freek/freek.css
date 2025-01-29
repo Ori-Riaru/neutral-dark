@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name           freek.to
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("https://freek.to/") {
+    #root > div.size-full {
+        padding: 0;
+    }
+}

@@ -1,0 +1,60 @@
+/* ==UserStyle==
+@name           chatgpt.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("https://chatgpt.com/")
+{
+  :root {
+    --gap: 10px;
+    --base: #000000;
+    --section: #111111;
+    --card: #222222;
+    --radius: 8px;
+
+    --main-surface-primary: var(--section) !important;
+    --main-surface-secondary: var(--card) !important;
+    /* Sidebar Buttons */
+    --sidebar-surface-primary: var(--section) !important;
+  }
+
+  nav {
+    background: var(--section);
+  }
+
+  body {
+    background: black !important;
+  }
+
+  div:has(> div > div > div > nav) {
+    margin-right: var(--gap) !important;
+    background: var(--section);
+    border-radius: var(--radius) !important;
+  }
+
+  @media not all and (min-width: 768px) {
+    div:has(> div > div > div > nav) {
+      margin-right: 0 !important;
+    }
+
+    div:has(> div > nav) {
+      background: var(--section);
+      border-radius: var(--radius) !important;
+      overflow: clip;
+      border-right-width: 0 !important;
+    }
+  }
+
+  div:has(> main) {
+    margin: 0;
+    background: var(--section) !important;
+    border-radius: var(--radius);
+  }
+
+  nav > div:last-child {
+    display: none !important;
+  }
+}
