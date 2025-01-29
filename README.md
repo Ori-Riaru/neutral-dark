@@ -8,7 +8,8 @@ Neutral Dark is design guideline and theme library. It provides a sleek appearan
 
 ## Preview
 
-TODO: Add preview
+TODO: Update vscode preview to reflect syntax highlighting
+![vscode-preview](./.github/preview.png)
 
 ## Specifications
 
@@ -30,8 +31,8 @@ Some themes may not implement all specifications either because the theme is inc
 
 ### Color Palette
 
-| Color              | Hex                                                                                                      | Swatch                                                      | Usage                                                             |
-| ------------------ | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------- |
+| Color              | Hex                                                                                                      | Swatch                                                       | Usage                                                             |
+| ------------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------- |
 | Text               |
 | `Text`             | <div style="color: white; background-color: #111111; padding: 15px; border-radius: 6px ">#ffffff</div>   | ![Text](./.github/swatches/text.png)                         | Basic text, Headers                                               |
 | `Subtext`          | <div style="color: #aaaaaa; background-color: #111111; padding: 15px; border-radius: 6px ">#aaaaaa</div> | ![Subtext](./.github/swatches/subtext.png)                   | Subtext, Placeholder, Comments                                    |
@@ -39,7 +40,7 @@ Some themes may not implement all specifications either because the theme is inc
 | Backgrounds        |
 | `base`             | <div style="color: white; background-color: #000000; padding: 15px; border-radius: 6px ">#000000</div>   | ![Base](./.github/swatches/base.png)                         | Window backgrounds                                                |
 | `section`          | <div style="color: white; background-color: #111111; padding: 15px; border-radius: 6px ">#111111</div>   | ![Section](./.github/swatches/section.png)                   | Major Section, Content Only Window                                |
-| `card`             | <div style="color: white; background-color: #181818; padding: 15px; border-radius: 6px ">#181818</div>   | ![Card](.github/swatches/card.png)                         | Card, Input, Semihighlighted button                               |
+| `card`             | <div style="color: white; background-color: #181818; padding: 15px; border-radius: 6px ">#181818</div>   | ![Card](.github/swatches/card.png)                           | Card, Input, Semihighlighted button                               |
 | `overlay`          | <div style="color: white; background-color: #222222; padding: 15px; border-radius: 6px ">#222222</div>   | ![Overlay](./.github/swatches/overlay.png)                   | Search Overlay,                                                   |
 | Customizations     |
 | `accent`           | <div style="color: white; background-color: #a386ff; padding: 15px; border-radius: 6px ">#a386ff</div>   | ![Accent](./.github/swatches/accent.png)                     | Custamizable Primary Accent                                       |
