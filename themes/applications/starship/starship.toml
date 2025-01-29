@@ -1,0 +1,116 @@
+add_newline = false
+format = "$character$cmd_duration$directory$fill$c$rust$nix_shell$golang$nodejs$php$java$kotlin$haskell$python$git_branch$git_status$username$line_break 󰜴 "
+palette = "neutral_dark"
+
+[c]
+format = "[](fg:blue)[[$symbol( $version)](fg:text bg:blue)]($style)[](fg:blue) "
+style = "bg:blue"
+symbol = " "
+
+[character]
+disabled = false
+error_symbol = "[](fg:red)[](bold bg:red)[](fg:red) "
+format = "$symbol"
+success_symbol = "[](fg:green)[](bold bg:green)[](fg:green) "
+
+[cmd_duration]
+format = "[](fg:orange)[$duration](bg:orange)[](fg:orange) "
+
+[directory]
+format = "[](fg:background)[$path](fg:text bg:background)[](fg:background) "
+truncation_length = 10
+truncation_symbol = "…/"
+
+[directory.substitutions]
+".config" = ""
+Developer = "󰲋 "
+Documents = "󰈙 "
+Downloads = " "
+Music = "󰝚 "
+Pictures = " "
+Projects = ""
+nix-configs = ""
+"~" = "󰉋"
+
+[docker_context]
+format = "[](fg:blue)[[ $symbol( $context) ](fg:text bg:blue)]($style)[](fg:blue) "
+style = "bg:bg3"
+symbol = ""
+
+[fill]
+symbol = " "
+
+[git_branch]
+format = "[](fg:cyan)[[ $symbol $branch ](fg:text bg:cyan)]($style)"
+style = "bg:cyan"
+symbol = ""
+
+[git_status]
+format = "[[($all_status$ahead_behind )](fg:text bg:cyan)]($style)[](fg:cyan) "
+style = "bg:cyan"
+
+[golang]
+format = "[](fg:blue)[[$symbol( $version)](fg:text bg:blue)]($style)[](fg:blue) "
+style = "bg:blue"
+symbol = ""
+
+[haskell]
+format = "[](fg:purple)[[ $symbol( $version) ](fg:text bg:purple)]($style)[](fg:purple) "
+style = "bg:purple"
+symbol = ""
+
+[java]
+format = "[](fg:red)[[$symbol( $version)](fg:text bg:red)]($style)[](fg:red) "
+style = "bg:blue"
+symbol = " "
+
+[kotlin]
+format = "[](fg:purple)[[ $symbol( $version) ](fg:text bg:purple)]($style)[](fg:purple) "
+style = "bg:blue"
+symbol = ""
+
+[line_break]
+disabled = false
+
+[nix_shell]
+format = "[](fg:blue)[[$symbol( $version)](fg:text bg:blue)]($style)[](fg:blue) "
+style = "bg:blue"
+symbol = ""
+
+[nodejs]
+format = "[](fg:green)[[$symbol( $version)](fg:text bg:green)]($style)[](fg:green) "
+style = "bg:blue"
+symbol = ""
+
+[palettes.neutral_dark]
+background = "#222222"
+blue = "#83bbff"
+cyan = "#7ef8fe"
+green = "#80ffc1"
+orange = "#ffa062"
+purple = "#a386ff"
+red = "#ff596b"
+subtext = "#AAAAAA"
+text = "#ffffff"
+yellow = "#fffb77"
+
+[php]
+format = "[](fg:purple)[[$symbol( $version)](fg:text bg:blue)]($style)[](fg:purple) "
+style = "bg:blue"
+symbol = ""
+
+[python]
+format = "[](fg:yellow)[[ $symbol($version) ](fg:text bg:yellow)]($style)[](fg:yellow) "
+style = "bg:yellow"
+symbol = ""
+
+[rust]
+format = "[](fg:orange)[[$symbol( $version)](fg:text bg:orange)]($style)[](fg:orange) "
+style = "bg:orange"
+symbol = ""
+
+[username]
+format = "[](fg:purple)[ $user ]($style)[](fg:purple)"
+show_always = true
+style_root = "bg:purple fg:text"
+style_user = "bg:purple fg:text"
