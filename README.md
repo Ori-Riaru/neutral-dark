@@ -69,4 +69,4 @@ Search the themes folder for your desired application or website. Once you have 
 
 ### NixOS
 
-If your using nixos check out my [nix configs](https://github.com/RiaruAzaki/nix-configs) which comes with application themed with neutral dark.
+If your using nixos check out my [nix configs](https://github.com/RiaruAzaki/nix-configs) which comes with application themed using neutral dark.
