@@ -1,4 +1,4 @@
-
+{
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#a386ff",
     "editorBracketHighlight.foreground2": "#83bbff",
@@ -8,89 +8,119 @@
     "editorBracketHighlight.foreground6": "#ffa062"
   },
 
+  "editor.semanticHighlighting.enabled": true,
+
   "editor.tokenColorCustomizations": {
-    //testing
     "textMateRules": [
       {
-        "scope": [""],
-        "settings": {
-          "foreground": "#FFFFFF"
-        }
-      },
-
-      {
-        "scope": ["comment", "punctuation.definition.comment"],
-        "settings": {
-          "foreground": "#AAAAAA"
-        }
-      },
-      {
-        "scope": ["variable", "constant.language", "entity.name.variable"],
-        "settings": {
-          "foreground": "#80ffc1" /* teal */
-        }
-      },
-      {
-        "scope": ["string", "entity.other.attribute-name", "markup.inserted"],
-        "settings": {
-          "foreground": "#99ff82" /* green */
-        }
-      },
-      {
-        "scope": ["keyword", "storage.type", "storage.modifier"],
-        "settings": {
-          "foreground": "#a386ff" /* purple */
-        }
-      },
-      {
-        "scope": ["constant.numeric", "constant.character.numeric"],
-        "settings": {
-          "foreground": "#ffa062" /* orange */
-        }
-      },
-      {
-        "scope": ["entity.name.tag", "meta.tag", "markup.deleted"],
-        "settings": {
-          "foreground": "#ff596b" /* red */
-        }
-      },
-      {
+        "name": "Text",
         "scope": [
-          "support.class",
-          "entity.name.type.class",
-          "entity.other.inherited-class"
+          "",
+          "entity.other.attribute-name",
+          "string.quoted.double.html",
+          "string.quoted.single.html"
         ],
         "settings": {
-          "foreground": "#fffb77" /* yellow */
-        }
-      },
-      {
-        "scope": ["punctuation.definition.string", "constant.other.symbol"],
-        "settings": {
-          "foreground": "#7ef8fe" /* cyan */
+          "foreground": "#ffffff"
         }
       },
 
       {
-        "scope": ["entity.name.function", "meta.function-call"],
+        "name": "Subtext",
+        "scope": ["comment"],
         "settings": {
-          "foreground": "#83bbff" /* blue */
+          "foreground": "#999999"
+        }
+      },
+      {
+        "name": "Hidden",
+        "scope": "",
+        "settings": {
+          "foreground": "#555555"
         }
       },
 
       {
-        "scope": ["keyword.operator", "punctuation.accessor"],
+        "name": "Red",
+        "scope": [
+          "constant.character",
+          "constant.language",
+          "constant.numeric"
+        ],
         "settings": {
-          "foreground": "#fe99fe" /* pink */
+          "foreground": "#ff596b"
+        }
+      },
+      {
+        "name": "Orange",
+        "scope": ["string", "string.quoted.double", "string.quoted.single"],
+        "settings": {
+          "foreground": "#ffa062"
         }
       },
 
       {
-        "scope": ["markup.changed"],
+        "name": "Yellow",
+        "scope": [
+          "entity.name.type",
+          "meta.preprocessor",
+          "entity.other.attribute-name.html"
+        ],
         "settings": {
-          "foreground": "#ba8d70" /* brown */
+          "foreground": "#fffb77"
+        }
+      },
+
+      {
+        "scope": [],
+        "settings": {
+          "foreground": "#99ff82"
+        }
+      },
+
+      {
+        "name": "Teal",
+        "scope": [
+          "storage.type",
+          "punctuation.definition.string",
+          "storage.type.rust",
+          "storage.type.function",
+          "meta.qualified_type.cpp",
+          "support.constant"
+        ],
+        "settings": {
+          "foreground": "#80ffc1"
+        }
+      },
+
+      {
+        "name": "Cyan",
+        "scope": ["support.function"],
+        "settings": {
+          "foreground": "#7ef8fe"
+        }
+      },
+      {
+        "name": "Purple",
+        "scope": [
+          "meta.tag",
+          "keyword",
+          "keyword.control",
+          "entity.name.tag",
+          "support.type.property-name"
+        ],
+        "settings": {
+          "foreground": "#a386ff"
+        }
+      },
+      {
+        "name": "Pink",
+        "scope": ["variable.parameter"],
+        "settings": {
+          "foreground": "#fe99fe",
+          "fontStyle": "bold"
         }
       }
     ]
   }
-
+}

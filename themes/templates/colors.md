@@ -1,0 +1,20 @@
+
+text = "#ffffff";
+subtext = "#888888";
+hidden = "#555555";
+base = "#080808";
+section = "#181818";
+card = "#222222";
+red = "#ff596b";
+orange = "#ffa062";
+yellow = "#fffb77";
+green = "#99ff82";
+teal = "#80ffc1";
+cyan = "#7ef8fe";
+blue = "#83bbff";
+purple = "#a386ff";
+pink = "#fe99fe";
+brown = "#ba8d70";
+white = "#ffffff";
+grey = "#272727";
+black = "#353535";
