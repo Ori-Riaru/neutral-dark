@@ -9,7 +9,7 @@
 @-moz-document url-prefix("https://chatgpt.com/")
 {
   :root {
-    --gap: 10px;
+    --gap: 5px;
     --base: #000000;
     --section: #111111;
     --card: #222222;
