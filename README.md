@@ -1,4 +1,4 @@
-# Neutral Dark (WIP)
+# Neutral Dark (Archive)
 
 `Disclaimer`: Neutral dark is WIP <span style="color: #fe5970"> Themes may be broken or incomplete </span>, extensive testing has not been performed. If you find a bug please fix it and submit a pull request.
 
